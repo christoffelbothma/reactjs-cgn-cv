@@ -1,0 +1,130 @@
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience__container > div {
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent; 
+    background: rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
+    backdrop-filter: blur(15px);
+}
+
+.experience__container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+    backdrop-filter: none;
+}
+
+.experience__container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.experience__details {
+    display: flex;
+    gap: 1rem;
+}
+
+.experience-icons {
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+/*THIS IS FOR THE WORK EXPERIENCE CONTAINERS*/
+.work__experience {
+    gap: 2rem;
+}
+
+.work__experience > div {
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent; 
+    background: rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
+    backdrop-filter: blur(15px);
+    margin-top: 2rem;
+}
+
+.work__experience > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+    backdrop-filter: none;
+}
+
+.work__experience > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.workexperience__details {
+    display: flex;
+    gap: 1rem;
+}
+
+.workexperience__content {
+    margin-bottom: 2rem;
+}
+
+/* tablets */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .work__experience__container {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .work__experience > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+/* phone */
+@media screen and (max-width: 600px) {
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__container > div {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    .work__experience__container {
+        gap: 1rem;
+    }
+
+    .work__experience > div {
+        width: 90%;
+        padding: 2rem;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+
